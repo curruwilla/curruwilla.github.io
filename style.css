@@ -138,4 +138,20 @@ h2 {
         text-align: center;
         margin-bottom: 10px;
     }
-  }
+}
+
+
+.number {
+position: absolute;
+top: -15px;
+left: -17px;
+background: #fff;
+border-radius: 50%;
+line-height: 38px;
+text-align: center;
+font-size: 0.9em;
+font-weight: bold;
+width: 45px;
+height: 45px;
+border: 3px solid #111827;
+}
