@@ -62,8 +62,16 @@
 
         <h2>Todos os produtos:</h2>
 
+        <div class="filtros">
+            <button class="btn-filter ativo" onclick="filterSelection(this, 'all')" title="Exibir todos">Todos</button>
+            <button class="btn-filter" onclick="filterSelection(this, 'eletronicos')" title="">Eletrônicos</button>
+            <button class="btn-filter" onclick="filterSelection(this, 'beleza')">Beleza</button>
+            <button class="btn-filter" onclick="filterSelection(this, 'petshop')">Pet Shop</button>
+            <button class="btn-filter" onclick="filterSelection(this, 'cozinha')">Cozinha</button>
+        </div>
+
         <div class="row">
-            <!--<div class="col-12 col-sm-6 col-md-6 col-lg-3">
+            <!--<div class="product-div eletronicos col-12 col-sm-6 col-md-6 col-lg-3">
                 <div class="card product-card-wi">
                     <div class="card-body">
                         <h1 class="card-title" itemprop="name">@NOME</h1>
@@ -79,7 +87,7 @@
                 </div>
             </div>-->
 
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="product-div petshop col-12 col-sm-6 col-md-6 col-lg-3">
                 <div class="card product-card-wi">
                     <div class="card-body">
                         <div class="number">#5</div>
@@ -96,7 +104,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="product-div eletronicos col-12 col-sm-6 col-md-6 col-lg-3">
                 <div class="card product-card-wi">
                     <div class="card-body">
                         <div class="number">#4</div>
@@ -113,7 +121,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="product-div cozinha col-12 col-sm-6 col-md-6 col-lg-3">
                 <div class="card product-card-wi">
                     <div class="card-body">
                         <div class="number">#3</div>
@@ -130,7 +138,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="product-div beleza col-12 col-sm-6 col-md-6 col-lg-3">
                 <div class="card product-card-wi">
                     <div class="card-body">
                         <div class="number">#2</div>
@@ -147,7 +155,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+            <div class="product-div beleza col-12 col-sm-6 col-md-6 col-lg-3">
                 <div class="card product-card-wi">
                     <div class="card-body">
                         <div class="number">#1</div>

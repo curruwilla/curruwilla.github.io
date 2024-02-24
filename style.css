@@ -155,3 +155,27 @@ width: 45px;
 height: 45px;
 border: 3px solid #111827;
 }
+
+
+.filtros {
+    margin-bottom: 10px;
+    margin-top: 11px;
+}
+
+
+.filtros .btn-filter {
+    background: #455869;
+    border: 2px solid #2e394f;
+    border-radius: 5px;
+    color: #fff;
+    padding: 4px 25px;
+    font-size: 0.9em;
+    margin: 0px 3px;
+    font-weight: 600;
+}
+
+
+.filtros .btn-filter.ativo {
+    background: #26333f;
+    border: 2px solid #26333f;
+}
