@@ -58,6 +58,7 @@ h2 {
 .product-card-wi {
     margin: 10px 0px;
     border: 5px solid #2e394f;
+    min-height: 457px;
 }
 
 .product-card-wi .card-body .card-title {
@@ -189,4 +190,5 @@ border: 3px solid #111827;
 
 a.disabled {
     pointer-events: none;
+    opacity: 0.2;
 }
