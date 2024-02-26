@@ -64,8 +64,10 @@ h2 {
     background: #2e394f;
     font-size: 1em;
     color: #fff;
-    text-align: center;
-    padding: 5px 2px;
+    padding: 5px 0px 5px 32px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card-body {
@@ -77,6 +79,7 @@ h2 {
     background: #fff;
     border-radius: 10px 10px 0px 0px;
     text-align: center;
+    min-height: 270px;
 }
 
 .product-card-wi .card-body .image img {
@@ -89,6 +92,9 @@ h2 {
     background: #f0f5ff;
     border-radius: 0px 0px 10px 10px;
     margin-bottom: 8px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .btn-buy {
@@ -179,4 +185,8 @@ border: 3px solid #111827;
 .filtros .btn-filter.ativo {
     background: #26333f;
     border: 2px solid #26333f;
+}
+
+a.disabled {
+    pointer-events: none;
 }
