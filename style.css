@@ -48,6 +48,25 @@ h2 {
     font-size: 0.9em;
 }
 
+.header-info .detail .midias a {
+    text-align: center;
+    font-size: 0.8em;
+    text-decoration: none;
+    margin: 2px 1px;
+    border: 1px solid #ddd;
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: #272727;
+    font-weight: 400;
+    display: inline-block;
+    min-width: 105px;
+}
+
+
+.header-info .detail .midias a:hover {
+    background: #e5e5e5;
+}
+
 .footer {
     text-align: center;
     color: #989da7;
@@ -190,4 +209,10 @@ border: 3px solid #111827;
 a.disabled {
     pointer-events: none;
     opacity: 0.2;
+}
+
+.txt-filtros {
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
 }
