@@ -1,59 +1,41 @@
-# Nome da sua Action no GitHub
-name: Deploy Astro to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
-  # O pipeline rodará sempre que houver um push na branch principal (main ou master)
+  # Trigger the workflow every time you push to the `main` branch
+  # Using a different branch name? Replace `main` with your branch’s name
   push:
-    branches:
-      - master # Mude para 'master' se for o nome da sua branch principal
-
-  # Permite que você rode o pipeline manualmente no painel do GitHub Actions
+    branches: [ main ]
+  # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
-# Permissões necessárias para que a Action publique no GitHub Pages
+# Allow this job to clone the repo and create a page deployment
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Define o job de deploy
 jobs:
-  build_and_deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      # Passo 1: Clona o repositório
-      - name: Checkout
+      - name: Checkout your repository using git
         uses: actions/checkout@v4
+      - name: Install, build, and upload your site
+        uses: withastro/action@v3
+        # with:
+          # path: . # The root location of your Astro project inside the repository. (optional)
+          # node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 20. (optional)
+          # package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
+        # env:
+          # PUBLIC_POKEAPI: 'https://pokeapi.co/api/v2' # Use single quotation marks for the variable value. (optional)
 
-      # Passo 2: Configura o Node.js
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-          cache: 'npm' # Usa cache para acelerar a instalação das dependências
-
-      # Passo 3: Instala as dependências
-      - name: Install dependencies
-        run: npm install
-
-      # Passo 4: Roda o Build do Astro
-      # O comando 'npm run build' usa o script definido no seu package.json
-      - name: Build Astro Site
-        run: npm run build
-        # A pasta de saída do Astro (outDir) por padrão é 'dist'
-
-      # Passo 5: Configura o ambiente de deploy do GitHub Pages
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      # Passo 6: Carrega a pasta gerada (dist) como artefato
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # A pasta 'dist' contém o site compilado
-          path: './dist' 
-
-      # Passo 7: Faz o Deploy no GitHub Pages
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
