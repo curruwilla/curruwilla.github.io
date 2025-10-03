@@ -7,10 +7,21 @@ category: 'Category 4'
 tags: ['PC']
 ---
 import ProductCard from "../../components/ProductCard.astro";
+import ProductCardCompact from "../../components/ProductCardCompact.astro";
 
 <ProductCard sku="fone_bluethooth_x1" />
 
+<ProductCard sku="fone_bluethooth_x1" badge="destaque" />
+
+<ProductCard sku="fone_bluethooth_x1" badge="recomendado" compact="{true}" />
+
 **If you know HTML, you already know enough to write your first Astro component.**
+
+<ProductCardCompact sku="fone_bluethooth_x1" badge="recomendado" />
+
+<ProductCardCompact sku="fone_bluethooth_x1" variant="minimal" />
+
+<ProductCardCompact sku="fone_bluethooth_x1" variant="inline" badge="melhor-custo" />
 
 Astro component syntax is a superset of HTML. The syntax was [designed to feel familiar to anyone with experience writing HTML or JSX](#differences-between-astro-and-jsx), and adds support for including components and JavaScript expressions.
 
@@ -179,14 +190,6 @@ An Astro component template can render multiple elements with no need to wrap ev
 #### Comments
 
 In Astro, you can use standard HTML comments or JavaScript-style comments.
-
-```astro title="example.astro"
----
-
----
-
-<!-- HTML comment syntax is valid in .astro files -->{/* JS comment syntax is also valid */}
-```
 
 :::caution
 HTML-style comments will be included in browser DOM, while JS ones will be skipped. To leave TODO messages or other development-only explanations, you may wish to use JavaScript-style comments instead.
