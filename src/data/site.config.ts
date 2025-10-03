@@ -16,6 +16,6 @@ export const siteConfig: SiteConfig = {
 	description: 'Análise inteligente e reviews completos de eletrônicos, gadgets e mais. Descubra qual produto comprar e encontre as melhores ofertas na Amazon, Shopee e ML. Curadoria do Dev Uilia.', // Description to display in the meta tags
 	lang: 'pt-BR',
 	ogLocale: 'pt_BR',
-	shareMessage: 'Compartilhe esse artigo', // Message to share a post on social media
-	paginationSize: 10 // Number of posts per page
+	shareMessage: 'Dá uma olhada neste artigo que achei interessante!', // Message to share a post on social media
+	paginationSize: 30 // Number of posts per page
 }

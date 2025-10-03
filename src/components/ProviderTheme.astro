@@ -18,10 +18,11 @@
 	}
 
 	// set initial theme
-	setTheme(getTheme())
-	document.addEventListener('astro:after-swap', () => setTheme(getTheme()))
+	// setTheme(getTheme())
+	setTheme('light')
+	// document.addEventListener('astro:after-swap', () => setTheme(getTheme()))
 
-	document.addEventListener('theme-change', (e) => {
-		setTheme(e.detail.theme)
-	})
+	// document.addEventListener('theme-change', (e) => {
+	// 	setTheme(e.detail.theme)
+	// })
 </script>
