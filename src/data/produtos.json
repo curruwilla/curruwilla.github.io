@@ -1,0 +1,24 @@
+[
+  {
+    "sku": "fone_bluethooth_x1",
+    "nome_curto": "Fone X1 - Bluetooth Pro",
+    "categoria": "Eletrônicos",
+    "links": {
+      "amazon": "https://amzn.to/seulinkamazon",
+      "shopee": "https://shopee.com.br/seulinkshopee",
+      "mercado_livre": "https://mercadolivre.com/seulinkml"
+    },
+    "imagem": "/assets/images/produtos/fone_x1.webp"
+  },
+  {
+    "sku": "cadeira_gamer_gtz",
+    "nome_curto": "Cadeira Gamer GTZ",
+    "categoria": "Móveis",
+    "links": {
+      "amazon": "https://amzn.to/seulinkamazon_cgtz",
+      "shopee": "https://shopee.com.br/seulinkshopee_cgtz",
+      "mercado_livre": "https://mercadolivre.com/seulinkml_cgtz"
+    },
+    "imagem": "../assets/images/produtos/cadeira_gtz.jpg"
+  }
+]

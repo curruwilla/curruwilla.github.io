@@ -1,0 +1,71 @@
+---
+import produtos from "../data/produtos.json";
+import { Image } from 'astro:assets'
+
+const { sku } = Astro.props;
+
+// Procura produto pelo SKU
+const produto = produtos.find((p) => p.sku === sku);
+
+if (!produto) {
+  throw new Error(`Produto com SKU "${sku}" não encontrado em produtos.json`);
+}
+---
+
+<div class="max-w-sm mx-auto rounded-2xl overflow-hidden shadow-lg bg-white dark:bg-gray-900 transition hover:scale-105 hover:shadow-xl">
+ 
+  <>
+			{
+				produto.imagem && (
+					<Image
+						src={produto.imagem}
+						width={1000}
+						height={500}
+						quality={100}
+						format='jpg'
+						loading='eager'
+						class='rw-full h-56 object-cover'
+						alt={`img of ${produto.nome_curto}`}
+					/>
+				)
+			}
+		</>
+
+  <div class="p-5">
+    <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-1">{produto.nome_curto}</h2>
+    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">{produto.categoria}</p>
+
+    <div class="flex flex-col gap-3">
+      {produto.links.amazon && (
+        <a
+          href={produto.links.amazon}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full text-center px-4 py-2 rounded-lg bg-yellow-500 text-white font-medium hover:bg-yellow-600 transition"
+        >
+          Comprar na Amazon
+        </a>
+      )}
+      {produto.links.shopee && (
+        <a
+          href={produto.links.shopee}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full text-center px-4 py-2 rounded-lg bg-orange-500 text-white font-medium hover:bg-orange-600 transition"
+        >
+          Comprar na Shopee
+        </a>
+      )}
+      {produto.links.mercado_livre && (
+        <a
+          href={produto.links.mercado_livre}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full text-center px-4 py-2 rounded-lg bg-blue-500 text-white font-medium hover:bg-blue-600 transition"
+        >
+          Comprar no Mercado Livre
+        </a>
+      )}
+    </div>
+  </div>
+</div>
