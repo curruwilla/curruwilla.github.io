@@ -1,71 +1,78 @@
 ---
-import produtos from "../data/produtos.json";
+import produtos from '../data/produtos.json'
 import { Image } from 'astro:assets'
+import AmazonIcon from './icons/AmazonIcon.astro'
+import ShopeeIcon from './icons/ShopeeIcon.astro'
+import MercadoLivreIcon from './icons/MercadoLivreIcon.astro'
 
-const { sku } = Astro.props;
+const { sku } = Astro.props
 
 // Procura produto pelo SKU
-const produto = produtos.find((p) => p.sku === sku);
+const produto = produtos.find((p) => p.sku === sku)
 
 if (!produto) {
-  throw new Error(`Produto com SKU "${sku}" não encontrado em produtos.json`);
+	throw new Error(`Produto com SKU "${sku}" não encontrado em produtos.json`)
 }
 ---
 
-<div class="max-w-sm mx-auto rounded-2xl overflow-hidden shadow-lg bg-white dark:bg-gray-900 transition hover:scale-105 hover:shadow-xl">
- 
-  <>
-			{
-				produto.imagem && (
-					<Image
-						src={produto.imagem}
-						width={1000}
-						height={500}
-						quality={100}
-						format='jpg'
-						loading='eager'
-						class='rw-full h-56 object-cover'
-						alt={`img of ${produto.nome_curto}`}
-					/>
-				)
-			}
-		</>
+<div
+	class='w-full my-8 flex flex-col md:flex-row items-center bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm transition-shadow duration-300 hover:shadow-md'
+>
+	<div class='w-full md:w-48 flex-shrink-0 bg-white border-r dark:bg-gray-800 p-4'>
+		{
+			produto.imagem && (
+				<Image
+					src={produto.imagem}
+					width={200}
+					height={200}
+					quality={90}
+					format='webp'
+					loading='lazy'
+					class='w-full h-full object-contain rounded-md'
+					alt={`Imagem do produto ${produto.nome_curto}`}
+				/>
+			)
+		}
+	</div>
 
-  <div class="p-5">
-    <h2 class="text-xl font-bold text-gray-900 dark:text-white mb-1">{produto.nome_curto}</h2>
-    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">{produto.categoria}</p>
+	<div class='flex flex-col justify-center p-6 flex-grow'>
+		<h2 class='text-lg font-semibold text-gray-900 dark:text-white mb-2'>{produto.nome_curto}</h2>
+		<p class='text-gray-600 dark:text-gray-400 text-sm mb-4'>{produto.descricao}</p>
 
-    <div class="flex flex-col gap-3">
-      {produto.links.amazon && (
-        <a
-          href={produto.links.amazon}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="w-full text-center px-4 py-2 rounded-lg bg-yellow-500 text-white font-medium hover:bg-yellow-600 transition"
-        >
-          Comprar na Amazon
-        </a>
-      )}
-      {produto.links.shopee && (
-        <a
-          href={produto.links.shopee}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="w-full text-center px-4 py-2 rounded-lg bg-orange-500 text-white font-medium hover:bg-orange-600 transition"
-        >
-          Comprar na Shopee
-        </a>
-      )}
-      {produto.links.mercado_livre && (
-        <a
-          href={produto.links.mercado_livre}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="w-full text-center px-4 py-2 rounded-lg bg-blue-500 text-white font-medium hover:bg-blue-600 transition"
-        >
-          Comprar no Mercado Livre
-        </a>
-      )}
-    </div>
-  </div>
+		<div class='flex flex-wrap gap-3 mt-auto pt-4 border-t border-gray-200 dark:border-gray-700'>
+			{produto.links.amazon && (
+				<a
+					href={produto.links.amazon}
+					target='_blank'
+					rel='noopener noreferrer'
+					class='flex items-center justify-center gap-2 flex-grow text-center px-4 py-2 rounded-md no-underline bg-amazon-yellow text-white font-medium hover:bg-opacity-90 transition-colors text-sm'
+				>
+					<AmazonIcon />
+					Amazon
+				</a>
+			)}
+			{produto.links.shopee && (
+				<a
+					href={produto.links.shopee}
+					target='_blank'
+					rel='noopener noreferrer'
+					class='flex items-center justify-center gap-2 flex-grow text-center px-4 py-2 rounded-md no-underline bg-shopee-orange text-white font-medium hover:bg-opacity-90 transition-colors text-sm'
+				>
+					<ShopeeIcon />
+					Shopee
+				</a>
+			)}
+			{produto.links.mercado_livre && (
+				<a
+					href={produto.links.mercado_livre}
+					target='_blank'
+					rel='noopener noreferrer'
+					class='flex items-center justify-center gap-2 flex-grow text-center px-4 py-2 rounded-md no-underline bg-mercadolibre-blue text-white font-medium hover:bg-opacity-90 transition-colors text-sm'
+				>
+					<MercadoLivreIcon />
+					Mercado Livre
+				</a>
+			)}
+		</div>
+	</div>
 </div>
