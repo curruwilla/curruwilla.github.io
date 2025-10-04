@@ -1,4 +1,10 @@
 // List of categories for blog posts
 export const CATEGORIES = [
-	'Category 4',
+	'Smartphones e Celulares',
+	'Notebooks e PCs',
+	'Acessórios Tech',
+	'Hardware e Performance',
+	'Casa Inteligente',
+	'Guias de Compra',
+	'Lançamentos e Tendências',
 ] as const

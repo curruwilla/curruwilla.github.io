@@ -96,7 +96,7 @@ const badgeInfo = badge ? badgeConfig[badge] : null
 						<svg class="w-4 h-4 text-yellow-500" viewBox="0 0 24 24" fill="currentColor">
 							<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
 						</svg>
-						<span class="text-sm font-semibold text-gray-700 dark:text-gray-300">4.8</span>
+						<span class="text-sm font-semibold text-gray-700 dark:text-gray-300">{produto.rating}</span>
 					</div>
 				)}
 			</div>
@@ -116,7 +116,7 @@ const badgeInfo = badge ? badgeConfig[badge] : null
 						class='group btn-primary bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700'
 					>
 						<span class="btn-content">
-							<span class="text-xs font-bold uppercase tracking-wide">Amazon</span>
+							<span class="text-xs font-bold uppercase tracking-wide" title="Ver na Amazon">Amazon</span>
 						</span>
 					</a>
 				)}
@@ -129,7 +129,7 @@ const badgeInfo = badge ? badgeConfig[badge] : null
 						class='group btn-primary bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700'
 					>
 						<span class="btn-content">
-							<span class="text-xs font-bold uppercase tracking-wide">Shopee</span>
+							<span class="text-xs font-bold uppercase tracking-wide" title="Ver na Shopee">Shopee</span>
 						</span>
 					</a>
 				)}
@@ -142,7 +142,7 @@ const badgeInfo = badge ? badgeConfig[badge] : null
 						class='group btn-primary bg-gradient-to-r from-blue-500 to-cyan-600 hover:from-blue-600 hover:to-cyan-700'
 					>
 						<span class="btn-content">
-							<span class="text-xs font-bold uppercase tracking-wide">Mercado Livre</span>
+							<span class="text-xs font-bold uppercase tracking-wide" title="Ver no Mercado Livre">Mercado Livre</span>
 						</span>
 					</a>
 				)}

@@ -1,26 +1,62 @@
 [
   {
-    "sku": "fone_bluethooth_x1",
-    "nome_curto": "Fone X1 - Bluetooth Pro",
-    "descricao": "Fones de Ouvido Bluetooth 5.3 Fones de Ouvido Sem Fio 42 Horas de Reprodução Fones de Ouvido Esportivos com IPX5 à Prova d'Água Fones de Ouvido de Graves Profundos para iOS Android, Preto",
-    "categoria": "Eletrônicos",
+    "sku": "MLB45818940",
+    "nome_curto": "Xiaomi Redmi Note 14 4g",
+    "descricao": "Descubra o equilíbrio perfeito entre funcionalidade, estilo e potência com o XIAOMI Redmi Note 14. Seu design inovador e especificações de última geração o tornam o aliado ideal para sua vida diária.",
+    "rating": 4.8,
     "links": {
-      "amazon": "https://amzn.to/seulinkamazon",
-      "shopee": "https://shopee.com.br/seulinkshopee",
-      "mercado_livre": "https://mercadolivre.com/seulinkml"
+      "amazon": "",
+      "shopee": "https://s.shopee.com.br/8V02s6qwuL",
+      "mercado_livre": "https://mercadolivre.com/sec/1qeanGV"
     },
-    "imagem": "/assets/images/produtos/fone_x1.webp"
+    "imagem": "/assets/images/produtos/xiaomi-redmi-note-14-4g.png"
   },
   {
-    "sku": "cadeira_gamer_gtz",
-    "nome_curto": "Cadeira Gamer GTZ",
-    "descricao": "Tecido respirável DT3 Max2Weave. Diga adeus ao suor e ao desconforto mesmo durante longas horas de jogo. O tecido respirável DT3 Max2Weave garante máxima ventilação e frescor, permitindo que você se concentre no que realmente importa: a vitória!",
-    "categoria": "Móveis",
+    "sku": "MLB44119805",
+    "nome_curto": "Samsung Galaxy A16 5g",
+    "descricao": "Mergulhe no seu conteúdo favorito com a clareza impressionante e as cores vibrantes da tela FHD+ Super AMOLED do Galaxy A16 5G. A tela expansiva de 6,7 polegadas com molduras minimizadas dá vida a todos os momentos..",
+    "rating": 4.8,
     "links": {
-      "amazon": "https://amzn.to/seulinkamazon_cgtz",
-      "shopee": "https://shopee.com.br/seulinkshopee_cgtz",
-      "mercado_livre": "https://mercadolivre.com/seulinkml_cgtz"
+      "amazon": "https://amzn.to/46DlNGk",
+      "shopee": "",
+      "mercado_livre": "https://mercadolivre.com/sec/31F2Wc3"
     },
-    "imagem": "../assets/images/produtos/cadeira_gtz.jpg"
+    "imagem": "/assets/images/produtos/samsung-galaxy-a16-5g-128gb.png"
+  },
+  {
+    "sku": "MLB41540844",
+    "nome_curto": "Motorola Moto G35 (5G)",
+    "descricao": "O celular moto g35 conta com uma câmera potente de 50 MP, equipada com inteligência artificial e diversas tecnologias que aprimoram a qualidade das fotos. Além disso, tem bateria longa para o dia todo, conexão 5G e processador octa-core que garante velocidade máxima sem interrupções.",
+    "rating": 4.8,
+    "links": {
+      "amazon": "https://amzn.to/3IIBpze",
+      "shopee": "",
+      "mercado_livre": "https://mercadolivre.com/sec/1UEkbu2"
+    },
+    "imagem": "/assets/images/produtos/motorola-moto-g35-5g.jpg"
+  },
+  {
+    "sku": "MLB29761240",
+    "nome_curto": "Xiaomi POCO C65",
+    "descricao": "O Poco C65 é um smartphone Android completo, que não tem muito a invejar aos mais avançados dispositivos. Surpreendente é sua tela Touchscreen de 6.74 polegadas, que coloca esse Poco no topo de sua categoria.",
+    "rating": 4.8,
+    "links": {
+      "amazon": "https://amzn.to/3VQBZ0N",
+      "shopee": "",
+      "mercado_livre": "https://mercadolivre.com/sec/2ozakkQ"
+    },
+    "imagem": "/assets/images/produtos/xiaomi-poco-c65.png"
+  },
+  {
+    "sku": "MLB37699141",
+    "nome_curto": "Samsung Galaxy A05s",
+    "descricao": "O Galaxy A05s foi feito com tudo que você precisa para criar e compartilhar os melhores conteúdos.",
+    "rating": 4.8,
+    "links": {
+      "amazon": "https://amzn.to/46M0Ckg",
+      "shopee": "",
+      "mercado_livre": "https://mercadolivre.com/sec/1X688Cc"
+    },
+    "imagem": "/assets/images/produtos/xiaomi-poco-c65.png"
   }
 ]
