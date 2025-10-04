@@ -58,5 +58,29 @@
       "mercado_livre": "https://mercadolivre.com/sec/1X688Cc"
     },
     "imagem": "/assets/images/produtos/samsung-galaxy-a05s-128-gb.webp"
+  },
+  {
+    "sku": "MLB1055308781",
+    "nome_curto": "iPhone 17 Pro 256GB - Azul-profundo",
+    "descricao": "iPhone 17 Pro. O iPhone mais potente já produzido. Tela brilhante de 6,3 polegadas¹, estrutura unibody em alumínio, chip A19 Pro, câmeras traseiras de 48 MP e duração de bateria avançada.",
+    "rating": 5.0,
+    "links": {
+      "amazon": "https://amzn.to/3VR6F1X",
+      "shopee": "",
+      "mercado_livre": "https://mercadolivre.com/sec/2rFuzmd"
+    },
+    "imagem": "/assets/images/produtos/iphone-17-pro-256gb.webp"
+  },
+  {
+    "sku": "MLB1055309028",
+    "nome_curto": "iPhone 17 512GB - Azul-névoa",
+    "descricao": "iPhone 17. Mais durável. Mais adorável. Tela de 6,3 polegadas com ProMotion¹, Ceramic Shield 2, câmeras traseiras de 48 MP, câmera frontal Center Stage, chip A19 e muito mais.",
+    "rating": 5.0,
+    "links": {
+      "amazon": "https://amzn.to/489zD4t",
+      "shopee": "",
+      "mercado_livre": "https://mercadolivre.com/sec/2JA83BE"
+    },
+    "imagem": "/assets/images/produtos/Iphone-17-2.png"
   }
 ]
