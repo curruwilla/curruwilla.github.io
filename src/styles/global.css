@@ -38,3 +38,10 @@
 .shadow {
 	box-shadow: -5px 3px 8px 1px rgba(0, 0, 0, 0.12);
 }
+
+@media (max-width: 640px) {
+	.prose table {
+		overflow: auto;
+		display: block;
+	}
+}
