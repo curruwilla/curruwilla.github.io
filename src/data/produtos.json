@@ -72,6 +72,30 @@
     "imagem": "/assets/images/produtos/iphone-17-pro-256gb.webp"
   },
   {
+    "sku": "iphone_17_pro_max_512gb_azul_profundo",
+    "nome_curto": "iPhone 17 Pro Max 512GB - Azul-profundo",
+    "descricao": "iPhone 17 Pro. O iPhone mais potente já produzido. Tela brilhante de 6,3 polegadas¹, estrutura unibody em alumínio, chip A19 Pro, câmeras traseiras de 48 MP e duração de bateria avançada.",
+    "rating": 5.0,
+    "links": {
+      "amazon": "https://amzn.to/4nCxFhX",
+      "shopee": "",
+      "mercado_livre": "https://mercadolivre.com/sec/15cTrhN"
+    },
+    "imagem": "/assets/images/produtos/iphone-17-pro-256gb.webp"
+  },
+  {
+    "sku": "iphone_17_pro_max_2tb_laranja_cosmico",
+    "nome_curto": "iPhone 17 Pro Max 2TB - Laranja-cósmico",
+    "descricao": "iPhone 17 Pro. O iPhone mais potente já produzido. Tela brilhante de 6,3 polegadas¹, estrutura unibody em alumínio, chip A19 Pro, câmeras traseiras de 48 MP e duração de bateria avançada.",
+    "rating": 5.0,
+    "links": {
+      "amazon": "https://amzn.to/46WsGBv",
+      "shopee": "",
+      "mercado_livre": "https://mercadolivre.com/sec/1YXGngK"
+    },
+    "imagem": "/assets/images/produtos/iphone-17-pro-max-2tb-laranja-cosmico.png"
+  },
+  {
     "sku": "MLB1055309028",
     "nome_curto": "iPhone 17 512GB - Azul-névoa",
     "descricao": "iPhone 17. Mais durável. Mais adorável. Tela de 6,3 polegadas com ProMotion¹, Ceramic Shield 2, câmeras traseiras de 48 MP, câmera frontal Center Stage, chip A19 e muito mais.",
@@ -82,5 +106,17 @@
       "mercado_livre": "https://mercadolivre.com/sec/2JA83BE"
     },
     "imagem": "/assets/images/produtos/Iphone-17-2.png"
+  },
+  {
+    "sku": "iphone_17_256_gb_salvia",
+    "nome_curto": "iPhone 17 256 GB - Sálvia",
+    "descricao": "iPhone 17. Mais durável. Mais adorável. Tela de 6,3 polegadas com ProMotion¹, Ceramic Shield 2, câmeras traseiras de 48 MP, câmera frontal Center Stage, chip A19 e muito mais.",
+    "rating": 5.0,
+    "links": {
+      "amazon": "https://amzn.to/46SRR7U",
+      "shopee": "",
+      "mercado_livre": "https://mercadolivre.com/sec/19aojV1"
+    },
+    "imagem": "/assets/images/produtos/iphone-17-256-gb-salvia.png"
   }
 ]
